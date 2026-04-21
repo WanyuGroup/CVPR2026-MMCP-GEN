@@ -156,7 +156,7 @@ To keep the repo reproducible while protecting private assets:
 - PyTorch ecosystem for multimodal modeling components
 
 If you build on this repository, citations and references are welcome.
-# DPLM + MMCP-GEN
+# MMCP-GEN
 
 一个面向蛋白序列生成的多模态条件训练仓库。  
 本仓库重点提供了 **MMCP（Multi-Modal Conditional Prompting）** 的可复用模块，以及一个可直接运行/改造的训练脚本模板。
