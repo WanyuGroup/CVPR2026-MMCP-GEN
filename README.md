@@ -1,5 +1,5 @@
 This repository provides a multimodal conditional training framework for protein sequence generation.  
-It focuses on reusable **MMCP (Multi-Modal Conditional Prompting)** modules and an end-to-end training template.
+It focuses on reusable **MMCP-GEN** modules and an end-to-end training template.
 
 ---
 
@@ -19,7 +19,7 @@ The two key files are:
 
 - `src/`, `scripts/`, `analysis/`, `assets/`, `vendor/`
 - `mmcp_modules.py`
-- `Train_mmcp_gen.py` (or your actual training entry)
+- `Train_mmcp_gen.py` 
 - `multimodal_encoders.py`
 - training/inference scripts such as `train_mmcp.py`, `train_multimodal_dplm.py`, `generate_dplm.py`
 - `requirements.txt`, `env.yml`, `setup.py`, `setup.cfg`
@@ -59,7 +59,7 @@ Design goal: **add multimodal controllability to the original DPLM backbone**.
 2. Initialize multimodal encoders (GVP-Transformer / SchNet / ProtBERT, configurable)
 3. Build MMCP components (indicator, queries, fusion, adapters, projection heads)
 4. Register adapter hooks on selected Transformer layers
-5. Jointly optimize:
+5. optimize:
    - sequence cross-entropy loss `L_CE`
    - structural alignment loss `L_align` (InfoNCE)
 6. Save MMCP parameters and encoder states
@@ -137,7 +137,6 @@ Typically contains:
 
 ---
 
-
 ## Acknowledgements
 
 - DPLM-related open implementations and community work
@@ -148,7 +147,7 @@ If you build on this repository, citations and references are welcome.
 # MMCP-GEN
 
 一个面向蛋白序列生成的多模态条件训练仓库。  
-本仓库重点提供了 **MMCP（Multi-Modal Conditional Prompting）** 的可复用模块，以及一个可直接运行/改造的训练脚本模板。
+本仓库重点提供了 **MMCP-GEN** 的可复用模块，以及一个可直接运行/改造的训练脚本模板。
 
 ---
 
@@ -158,7 +157,7 @@ If you build on this repository, citations and references are welcome.
 
 核心代码主要在两个文件：
 
-- `mmcp_modules.py`：MMCP 核心模块定义（可独立复用）
+- `mmcp_modules.py`：MMCP-GEN 核心模块定义（可独立复用）
 - `Train_mmcp_gen.py`：MMCP-GEN 训练脚本模板（端到端训练流程）
 
 ---
@@ -167,7 +166,7 @@ If you build on this repository, citations and references are welcome.
 
 - `src/`, `scripts/`, `analysis/`, `assets/`, `vendor/`
 - `mmcp_modules.py`
-- `Train_mmcp_gen.py`（或你实际训练入口脚本）
+- `Train_mmcp_gen.py`
 - `multimodal_encoders.py`
 - `train_mmcp.py`, `train_multimodal_dplm.py`, `generate_dplm.py` 等训练/推理脚本
 - `requirements.txt`, `env.yml`, `setup.py`, `setup.cfg`
@@ -206,7 +205,7 @@ If you build on this repository, citations and references are welcome.
 2. 初始化多模态编码器（GVP-Transformer / SchNet / ProtBERT，可开关）
 3. 构建 MMCP 组件（indicator、query、fusion、adapter、投影头）
 4. 在选定 Transformer 层注册 adapter hook
-5. 训练时联合优化：
+5. 训练时优化：
    - 序列交叉熵损失 `L_CE`
    - 结构对齐损失 `L_align`（InfoNCE）
 6. 保存 MMCP 相关参数与编码器状态
@@ -283,7 +282,6 @@ python Train_mmcp_gen.py \
 - （可选）多模态编码器参数
 
 ---
-
 
 ## 致谢
 
