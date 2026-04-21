@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ByProt
+Version: 1.0.0
+Summary: A pytorch library for swift protein design research and developing.
+Author: ByteDance Research
+Author-email: zhengzaixiang@bytedance.com
+License-File: LICENSE
