@@ -14,7 +14,7 @@ The two key files are:
 
 ---
 
-## Repository Scope (Public Version)
+## Repository Scope
 
 
 - `src/`, `scripts/`, `analysis/`, `assets/`, `vendor/`
@@ -63,8 +63,6 @@ Design goal: **add multimodal controllability to the original DPLM backbone**.
    - sequence cross-entropy loss `L_CE`
    - structural alignment loss `L_align` (InfoNCE)
 6. Save MMCP parameters and encoder states
-
-> The script contains both practical training logic and placeholder paths, making it suitable for quick adaptation.
 
 ---
 
@@ -139,16 +137,6 @@ Typically contains:
 
 ---
 
-## Reproducibility and Open-Sourcing Tips
-
-To keep the repo reproducible while protecting private assets:
-
-1. Publish code, interfaces, and runnable commands
-2. Do not upload private weights, data, or real production configs
-3. If needed, provide only `*.example.yaml` config templates
-4. Log environment versions (Python, PyTorch, CUDA) in issues/PRs
-
----
 
 ## Acknowledgements
 
@@ -156,6 +144,7 @@ To keep the repo reproducible while protecting private assets:
 - PyTorch ecosystem for multimodal modeling components
 
 If you build on this repository, citations and references are welcome.
+
 # MMCP-GEN
 
 一个面向蛋白序列生成的多模态条件训练仓库。  
@@ -175,8 +164,6 @@ If you build on this repository, citations and references are welcome.
 ---
 
 ## 代码结构
-
-推荐公开以下目录/文件：
 
 - `src/`, `scripts/`, `analysis/`, `assets/`, `vendor/`
 - `mmcp_modules.py`
@@ -223,8 +210,6 @@ If you build on this repository, citations and references are welcome.
    - 序列交叉熵损失 `L_CE`
    - 结构对齐损失 `L_align`（InfoNCE）
 6. 保存 MMCP 相关参数与编码器状态
-
-> 该脚本包含真实流程和占位逻辑，适合快速复现实验与二次开发。
 
 ---
 
@@ -299,16 +284,6 @@ python Train_mmcp_gen.py \
 
 ---
 
-## 复现与公开建议
-
-为了让仓库可复现且不泄露私有资产，建议：
-
-1. 公开代码、接口和运行命令
-2. 不上传权重、数据、真实实验超参数
-3. 若需分享配置，仅提供 `*.example.yaml` 模板
-4. 在 Issues/PR 中记录环境版本（Python、PyTorch、CUDA）
-
----
 
 ## 致谢
 
