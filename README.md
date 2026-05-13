@@ -1,3 +1,6 @@
+<img width="5000" height="2044" alt="all_1_new" src="https://github.com/user-attachments/assets/5ac7efb8-f30a-4a66-aeaf-9f65577217ef" />
+<img width="5238" height="2117" alt="all_2" src="https://github.com/user-attachments/assets/fbb59775-8aeb-4f79-9530-65a7e50ee86d" />
+
 This repository provides a multimodal conditional training framework for protein sequence generation.  
 It focuses on reusable **MMCP-GEN** modules and an end-to-end training template.
 
