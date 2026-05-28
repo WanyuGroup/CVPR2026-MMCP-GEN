@@ -154,3 +154,19 @@ Typically contains:
 - PyTorch ecosystem for multimodal modeling components
 
 If you build on this repository, citations and references are welcome.
+
+
+## 📝 Citation
+
+If you find our work or code useful for your research, please consider citing:
+
+```bibtex
+@InProceedings{An_2026_CVPR,
+    author    = {An, Zeyu and Lin, Wanyu and Tan, Feng and Wang, Shujun},
+    title     = {MMCP-GEN: A Modality-Extensible Diffusion Language Model for Conditional Protein Sequence Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {15762-15772}
+}
+```
