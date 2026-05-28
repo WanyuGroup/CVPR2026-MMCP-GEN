@@ -2,7 +2,8 @@
 
 # MMCP-GEN: A Modality-Extensible Diffusion Language Model for Conditional Protein Sequence Generation
 
-[![Paper](https://openaccess.thecvf.com/content/CVPR2026/html/An_MMCP-GEN_A_Modality-Extensible_Diffusion_Language_Model_for_Conditional_Protein_Sequence_CVPR_2026_paper.html)](#)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red.svg)](https://openaccess.thecvf.com/content/CVPR2026/html/An_MMCP-GEN_A_Modality-Extensible_Diffusion_Language_Model_for_Conditional_Protein_Sequence_CVPR_2026_paper.html)
+
 
 
 <img width="5000" height="2044" alt="all_1_new" src="https://github.com/user-attachments/assets/5ac7efb8-f30a-4a66-aeaf-9f65577217ef" />
